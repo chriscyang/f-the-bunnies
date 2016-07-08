@@ -14,16 +14,6 @@ public class LevelManager : MonoBehaviour
 		GetComponent<GhostManager> ().GenerateGhosts (ghostCount);
 	}
 
-	public int getGhostCount ()
-	{
-		return ghostCount;
-	}
-
-	public void incKills ()
-	{
-		kills++;
-	}
-
 	void Update ()
 	{
 		if (kills >= ghostCount) {
@@ -34,5 +24,15 @@ public class LevelManager : MonoBehaviour
 		if (Input.GetKey (KeyCode.Escape)) {
 			Application.Quit ();
 		}
+	}
+
+	public int getGhostCount ()
+	{
+		return ghostCount;
+	}
+
+	public void incKills ()
+	{
+		kills++;
 	}
 }

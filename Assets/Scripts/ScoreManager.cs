@@ -11,11 +11,6 @@ public class ScoreManager
 		return score;
 	}
 
-	public static int GetHighScore ()
-	{
-		return highScore;
-	}
-
 	public static void AddScore (int x)
 	{
 		score += x;
@@ -24,6 +19,11 @@ public class ScoreManager
 	public static void ResetScore ()
 	{
 		score = 0;
+	}
+
+	public static int GetHighScore ()
+	{
+		return highScore;
 	}
 
 	public static void UpdateHighScore ()

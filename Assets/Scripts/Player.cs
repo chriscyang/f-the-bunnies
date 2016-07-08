@@ -21,8 +21,8 @@ public class Player : MonoBehaviour
 
 	void ShootGhost ()
 	{
-		for (int delta_degree = 60; delta_degree < 130; delta_degree++) {
-			Quaternion q = Quaternion.AngleAxis (delta_degree - 180, Vector3.up);
+		for (int deltaDeg = 60; deltaDeg < 130; deltaDeg++) {
+			Quaternion q = Quaternion.AngleAxis (deltaDeg - 180, Vector3.up);
 			Vector3 d = player.right * maxDistance;
 			RaycastHit hit;
 
