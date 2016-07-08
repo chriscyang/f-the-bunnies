@@ -25,7 +25,7 @@ public class Ghost : MonoBehaviour
 		}
 
 		// Face the player.
-		// Done by rotating an additional 180 degrees because the model is fucked up. 
+		// Done by rotating an additional 180 degrees because the model is fucked up.
 		transform.LookAt (player);
 		transform.rotation *= Quaternion.Euler (0, 180f, 0);
 
@@ -74,7 +74,7 @@ public class Ghost : MonoBehaviour
 		// Jump right in front of the player.
 		transform.position = player.position + player.forward;
 
-		// Reorientate to face the player again. 
+		// Reorientate to face the player again.
 		transform.LookAt (player.position);
 		transform.rotation *= Quaternion.Euler (0, 180f, 0);
 
